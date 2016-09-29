@@ -56,6 +56,7 @@ $ npm start
 - [Mock up APIs for prototyping](http://www.mockapi.io/#/mocks)
 - [Typescript sandbox](http://www.mockapi.io/#/mocks)
 - [Inspirational talk by John Papa about ES5, ES6, TypeScript](https://johnpapa.net/es5-es2015-typescript/)
+- [Previous repo from Angular 1.5 lab](https://github.com/CodiCamp/es6-ng-lab)
 - [Soundcloud... lots of it](https://soundcloud.com)
 
 ### Known issues 
