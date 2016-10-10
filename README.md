@@ -54,7 +54,7 @@ $ npm start
 - [Services explained like a Pro](http://stackoverflow.com/questions/34830534/angular2-class-not-exposing-functions)
 - [Good repo example of Routing, I was about to abandon all hope on routes before I reached this repo](https://github.com/fantianyi/Angular-2-Example---Tour-Of-Heroes---6-Routing---ES5)
 - [Mock up APIs for prototyping](http://www.mockapi.io/#/mocks)
-- [Typescript sandbox](http://www.mockapi.io/#/mocks)
+- [Typescript sandbox](http://www.typescriptlang.org/play/)
 - [Inspirational talk by John Papa about ES5, ES6, TypeScript](https://johnpapa.net/es5-es2015-typescript/)
 - [Previous repo from Angular 1.5 lab](https://github.com/CodiCamp/es6-ng-lab)
 - [Soundcloud... lots of it](https://soundcloud.com)
