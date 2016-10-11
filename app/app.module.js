@@ -15,7 +15,8 @@
                 app.addHeroComponent
             ],
             providers: [
-                app.HeroicServices
+                app.HeroicServices,
+                app.SearchHeroesService
             ],
             bootstrap: [
                 app.AppComponent

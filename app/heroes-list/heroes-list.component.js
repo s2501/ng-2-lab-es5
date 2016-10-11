@@ -3,14 +3,19 @@
         ng.core.Component({
             selector: 'my-heroes',
             templateUrl: 'app/heroes-list/heroes-list.html',
-            providers: [app.HeroicServices]
+            providers: [app.HeroicServices, app.SearchHeroesService]
         })
         .Class({
-            constructor: [app.HeroicServices, ng.router.Router, function(service, router) {
+            constructor: [
+                app.HeroicServices,
+                app.SearchHeroesService,
+                ng.router.Router,
+                function(service, search, router) {
 
                 var viewModel = this;
 
                 viewModel.service = service;
+                viewModel.search = search;
                 viewModel.router = router;
 
                 viewModel.selectedHero = null;
@@ -34,6 +39,7 @@
             },
             delete: function(hero) {
                 var viewModel = this;
+                // viewModel.search.searchHeroes(hero);
                 viewModel.service.deleteHero(hero.id)
                     .then(function () {
                         viewModel.heroes = viewModel.heroes.filter(function (item){

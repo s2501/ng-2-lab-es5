@@ -12,7 +12,30 @@
 
         }],
         searchHeroes: function (obj) {
-            // Observable(obj)
+            var viewModel = this;
+
+            // observable logic
+            var a = function(item, callback){
+                viewModel.http.get(item).map(function (response) {
+                    callback(response.json().data)
+                })
+            };
+
+            var b = Rx.Observable.bindCallback(a);
+
+            var result = b(obj);
+
+            result.subscribe(
+
+                function(obj){
+
+                    console.log(obj)
+                },
+                function (error) {
+
+                    console.log(error);
+                }
+            );
         }
     });
 
