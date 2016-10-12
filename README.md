@@ -57,13 +57,15 @@ $ npm start
 - [Typescript sandbox](http://www.typescriptlang.org/play/)
 - [Inspirational talk by John Papa about ES5, ES6, TypeScript](https://johnpapa.net/es5-es2015-typescript/)
 - [Previous repo from Angular 1.5 lab](https://github.com/CodiCamp/es6-ng-lab)
+- [Intro on RxJS](https://medium.com/@puppybits/rxjs-is-great-so-why-have-i-moved-on-534c513e7af3#.lo41oc8qt)
+- [RxJS Gist](https://gist.github.com/staltz/868e7e9bc2a7b8c1f754) 
+- [RxJS, Read all you can](http://reactivex.io/rxjs/manual/overview.html) 
 - [Soundcloud... lots of it](https://soundcloud.com)
 
 ### Known issues 
 
 - Wasn't able to get to work ng.http.Headers, implemented a work around, pull requests are welcome
-- Has to work on Observables, implementing the search and half of the [TOH HTTP part 7 tutorial](https://angular.io/docs/ts/latest/tutorial/toh-pt6.html)
-- Switch to ES6 and play even more
+- Next branch, hopefully in ES6
 
 ### IDE of choice 
 
