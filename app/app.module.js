@@ -12,6 +12,7 @@
                 app.HeroListComponent,
                 app.HeroDetailsComponent,
                 app.DashboardComponent,
+                app.HeroSearchComponent,
                 app.addHeroComponent
             ],
             providers: [

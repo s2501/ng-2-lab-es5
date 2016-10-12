@@ -6,36 +6,23 @@
 
             viewModel.http = http;
 
-            viewModel.url = "http://57ed26849815a81100234d00.mockapi.io/v1/heroes/";
+            viewModel.url = "http://57ed26849815a81100234d00.mockapi.io/v1/heroes?search=";
             viewModel.headers = new Headers();
             viewModel.headers.append('Content-Type', 'application/json');
 
         }],
-        searchHeroes: function (obj) {
+        searchHeroes: function (searchTerm) {
             var viewModel = this;
+            var searchUrl = viewModel.url + searchTerm;
 
-            // observable logic
-            var a = function(item, callback){
-                viewModel.http.get(item).map(function (response) {
-                    callback(response.json().data)
-                })
-            };
+            var x = viewModel.http.get(searchUrl)
+                .map(function(response) {
 
-            var b = Rx.Observable.bindCallback(a);
+                    viewModel.hero = response.json();
+                    return viewModel.hero;
+                });
 
-            var result = b(obj);
-
-            result.subscribe(
-
-                function(obj){
-
-                    console.log(obj)
-                },
-                function (error) {
-
-                    console.log(error);
-                }
-            );
+            return x;
         }
     });
 

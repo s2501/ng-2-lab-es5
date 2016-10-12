@@ -6,14 +6,18 @@
             providers: [app.HeroicServices]
         })
             .Class({
-                constructor: [app.HeroicServices, ng.router.Router, function(service, router) {
+                constructor: [
+                    app.HeroicServices,
+                    ng.router.Router,
+                    function(service, router) {
 
                     var viewModel = this;
 
                     viewModel.service = service;
                     viewModel.router = router;
 
-                }],
+                    }
+                ],
                 ngOnInit: function() {
                     var viewModel = this;
                     viewModel.service.getHeroes()

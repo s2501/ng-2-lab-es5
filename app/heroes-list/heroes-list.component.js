@@ -39,7 +39,7 @@
             },
             delete: function(hero) {
                 var viewModel = this;
-                // viewModel.search.searchHeroes(hero);
+
                 viewModel.service.deleteHero(hero.id)
                     .then(function () {
                         viewModel.heroes = viewModel.heroes.filter(function (item){
@@ -52,6 +52,7 @@
                     .catch (function(reason) {
                         console.log(reason);
                     });
+
             },
             goToDetail: function() {
                 var link = "detail/" + this.selectedHero.id;

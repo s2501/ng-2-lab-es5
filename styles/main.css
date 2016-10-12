@@ -194,3 +194,28 @@ nav a.active {
         min-width: 60px;
     }
 }
+#search-component {
+    position: relative;
+    display: block;
+}
+.search-result{
+    border-bottom: 1px solid gray;
+    border-left: 1px solid gray;
+    border-right: 1px solid gray;
+    width:195px;
+    height: 20px;
+    padding: 5px;
+    background-color: white;
+    cursor: pointer;
+}
+#search-box{
+    width: 200px;
+    height: 20px;
+}
+
+.search-results-wrapper {
+    position: absolute;
+    display: block;
+    z-index: 3;
+    top: 100%;
+}

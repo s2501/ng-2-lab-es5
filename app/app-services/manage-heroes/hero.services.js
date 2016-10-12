@@ -17,7 +17,7 @@
             var letsMakeAPromise = this.http.get(this.url)
                 .toPromise()
                 .then(function (response){
-                   return JSON.parse(response._body);
+                   return response.json();
                 })
                 .catch(function(reason) {
                     console.log(reason);
